@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>Bindass Stream</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="css/loading.css">
+<body>
+<div id="loader" style="display: none;"></div>
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="img/groot.jpg" alt="avatar" style="width:75%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="index.html">Home</a>
+<a class="w3-bar-item w3-button" href="category.html">Category</a>
+<a class="w3-bar-item w3-button" href="contact.html">Contact</a>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h3 class="w3-bar-item"><a href="index.html">Bindass Stream</a></h3>
+</header>
+
+<div class="w3-container" style="margin-top:90px">
+<h3 id="title"></h3>
+<hr>
+<article class="w3-container" id="post">
+
+</article>
+<hr>
+</div>
+<footer class="w3-container w3-bottom w3-theme w3-margin-top">
+  <h5>Enjoy!!</h5>
+</footer>
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/display_post.js"></script>
+<input type="hidden" id="cpage" value="1">
+<input type="hidden" id="total_pages" value="0">
+</body>
+</html>
